@@ -87,28 +87,40 @@ input {
 }
 
 /* banner */
-.banner img {
-    height: 580px;
-    width: 100%;
-}
-.banner button {
-    width: 300px;
-    height: 70px;
-    border-radius: 50px;
-    border: none;
-    background: var(--main-color);
+.slick-prev, .slick-next {
     position: absolute;
-    left: 22%;
-    bottom: 40%;
-    color: var(--sub-color);
-    font-size: var(--title-size);
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    border: none;
+    background: rgba(0,0,0,.6);
+    cursor: pointer;
 }
-.banner button:hover {
-    background: var(--sub-color);
-    color: var(--main-color);
-    border: 1px solid var(--main-color);
+.slick-prev {
+    left: 0;
 }
+.slick-next {
+    right: 0;
+}
+.slick-prev:after, .slick-next:after {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+.slick-prev:after, .slick-next:after {
+    font-family: unicons-line;
+}
+.slick-prev:after {
+    content: '\ec49';
+}
+.slick-next:after {
+    content: '\eb9f';
+}
+
 .main {
+    display: none;
     margin-top: -100px;
     z-index: 100;
     height: 100px;
@@ -126,6 +138,8 @@ input {
     color: var(--sub-color);
     font-size: var(--title-size);
 }
+
+/* section img */
 .welcome {
     padding: 10rem 0;
     width: 1080px;
@@ -135,6 +149,7 @@ input {
     padding: 5rem 1rem;
 }
 .goods img {
+    cursor: pointer;
     width: 32%;
     padding: 2rem;
 }
@@ -142,9 +157,11 @@ input {
     width: 80%;
     transform: translateX(10%);
 }
+
 .delivery {
     background: #F7F8F9;
     padding: 10rem 0;
+    position: relative;
 }
 .freeshipping {
     width: 1080px;
@@ -153,13 +170,31 @@ input {
 .freeshipping img {
     transform: translateX(38%);
 }
+.freeshipping h1 {
+    position: absolute;
+    top: 22%;
+    left: 51%;
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
 .month {
     background: #EBECEE;
     padding: 10rem 0;
+    position: relative;
 }
+.month h1 {
+    position: absolute;
+    top: 21%;
+    left: 44.5%;
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
 .reserve {
     background: #F9F9F9;
     padding: 10rem 0;
+    position: relative;
 }
 .coupon {
     width: 1080px;
@@ -167,5 +202,148 @@ input {
 }
 .reserve .coupon img {
     transform: translateX(37%);
+}
+.reserve h1 {
+    position: absolute;
+    top: 21%;
+    left: 49.5%;
+    font-size: 5rem;
+    color: var(--main-color);
+}
 
+/* recommend */
+.recommend {
+    display: none;
+}
+/* md */
+.md {
+    width: 1080px;
+    margin: 0 auto;
+}
+.md h1 {
+    text-align: center;
+}
+.list {
+    text-align: center;
+}
+.list__item {
+    border: 1px solid #000;
+    padding: 0.5em;
+    border-radius: .5rem;
+    display: inline-block;
+}
+.list__img {
+    display: flex;
+    width: 1100px;
+    margin: 0 auto;
+}
+.list__img img {
+    margin-right: 2rem;
+    width: 250px;
+    height: 320px;
+}
+.list__img img:first-child {
+    margin-left: 1rem;
+}
+/* text__banner */
+.text__banner {
+    background: #F9EAEA;
+    width: 1080px;
+    margin: 0 auto;
+    height: 140px;
+    line-height: 2;
+    padding: 2.5rem;
+    color: #6A2626;
+}
+.text__banner h1 {
+    font-size: var(--title-size);
+}
+.text__banner p {
+    font-size: var(--sub-size);
+}
+
+/* instargram */
+.epilogue {
+    width: 1080px;
+    margin: 0 auto;
+    height: 300px;
+}
+.epilogue h1 {
+    text-align: center;
+    color: #333;
+    margin: 3rem 0;
+}
+.instargram {
+    display: flex;
+    justify-content: center;
+}
+.instargram img {
+    cursor: pointer;
+    width: 170px;
+    height: 170px;
+}
+.instargram__desc {
+    margin: 2rem 0;
+    text-align: center;
+}
+.instargram__desc p:first-child {
+    color: #999;
+    margin-bottom: 1rem;
+}
+.instargram__desc p:last-child {
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    width: 1080px;
+    margin: 0 auto;
+}
+.footer__banner {
+    border-bottom: 1px solid #F7F7F7;
+}
+.footer__banner img {
+    width: 100%;
+}
+.footer__customer {
+    float: left;
+}
+.number, .kakaotalk, .question {
+    display: flex;
+    flex: 1;
+    margin: 2rem 0;
+}
+.number h1, .kakaotalk h5, .question h5 {
+    width: 120px;
+}
+.kakaotalk p, .question p {
+    margin: 0 4rem 0;
+}
+.number p, .kakaotalk p, .question p {
+    flex: 1;
+}
+.kakaotalk h5, .question h5 {
+    border: 1px solid #000;
+    width: 80px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+.footer__info {
+    float: right;
+}
+ul .menu__imem {
+    display: inline-block;
+    padding: 1rem;
+}
+.info {
+    height: 120px;
+    line-height: 1.5;
+}
+.info a {
+    color: var(--main-color);
+}
+.sns img {
+    padding: 1rem 1rem 1rem 0;
+    max-width: 50px;
 }

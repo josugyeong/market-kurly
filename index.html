@@ -3,9 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 <link rel="stylesheet" href="./css/style.css">
-<title>kurly</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<link rel="stylesheet" href="./js/script.js">
+<title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
 </head>
 <body>
 <header>
@@ -43,12 +47,19 @@
     </div>
 </header>
 <section>
-    <div class="banner">
-        <img src="./img/main.webp" alt="main">
-        <button>
-            <p>가입하고 혜택받기 ></p>
-        </button>
+<div class="custom__slider">
+    <div class="slider__content">
+        <div class="slider__img">
+            <img src="./img/banner1.webp" alt="banner">
+        </div>
     </div>
+
+    <!-- <div class="slider__content">
+        <div class="slider__img">
+            <img src="./img/banner2.webp" alt="banner">
+        </div>
+    </div> -->
+</div>
     <div class="main">
         <ul class="main__desc">
             <li><a href="#welcome">Welcome Gift</a></li>
@@ -59,7 +70,7 @@
 </section>
 <section class="welcome" id="welcome">
     <div>
-        <img src="./img/benefit1.webp" alt="welcome bg">
+        <img src="./img/benefit1.webp" alt="혜택1">
     </div>
     <div class="goods">
         <img src="./img/goods1.webp" alt="베요타 100% 목살 구이">
@@ -75,18 +86,177 @@
 </section>
 <section class="delivery" id="delivery">
     <div class="freeshipping">
-        <img src="./img/benefit2.webp" alt="delivery">
+        <img src="./img/benefit2.webp" alt="혜택2">
+        <h1>무료배송</h1>
     </div>
 </section>
 <section class="month" id="month">
     <div class="coupon">
-        <img src="./img/benefit3_v2.webp" alt="">
+        <img src="./img/benefit3_v2.webp" alt="혜택3">
+        <h1>5%</h1>
     </div>
 </section>
 <section class="reserve">
     <div class="coupon">
-        <img src="./img/benefit4_v2.webp" alt="">
+        <img src="./img/benefit4_v2.webp" alt="혜택4">
+        <h1>5000원 적립</h1>
     </div>
 </section>
+<section class="recommend">
+    <h1>이 상품 어때요?</h1>
+    <div class="recommend__item">
+        <img src="./img/product.jpg" alt="product">
+        <img src="./img/product2.jpg" alt="product">
+        <img src="./img/product3.jpg" alt="product">
+        <img src="./img/product4.jpg" alt="product">
+    </div>
+    <div class="recommend__desc">
+        <p>
+            <span>산천농원 무농약 곶감 8입(냉동)</span>
+            <span>12,900원</span>
+        </p>
+        <p>
+            <span>[아넬라] 과일 퓨레 9종</span>
+            <span>3,900원</span>
+        </p>
+        <p>
+            <span>[새로미부산어묵] 게맛살</span>
+            <span>5,200원</span>
+        </p>
+        <p>
+            <span>[알라]</span>
+            <span>3,400원</span>
+        </p>
+    </div>
+</section>
+<section class="md">
+    <h1>MD의 추천</h1>
+    <div class="list">
+        <ul>
+            <li class="list__item"><a href="#">채소</a></li>
+            <li class="list__item"><a href="#">과일·견과·쌀</a></li>
+            <li class="list__item"><a href="#">수산·해산·건어물</a></li>
+            <li class="list__item"><a href="#">정육·계란</a></li>
+            <li class="list__item"><a href="#">국·반찬·메인요리</a></li>
+            <li class="list__item"><a href="#">샐러드·간편식</a></li>
+            <li class="list__item"><a href="#">면·양념·오일</a></li>
+        </ul>
+        <ul>
+            <li class="list__item"><a href="#">우유·커피</a></li>
+            <li class="list__item"><a href="#">간식·과자·떡</a></li>
+            <li class="list__item"><a href="#">베이커리·치즈·델리</a></li>
+            <li class="list__item"><a href="#">건강식품</a></li>
+            <li class="list__item"><a href="#">생활용품·리빙</a></li>
+            <li class="list__item"><a href="#">스킨케어·메이크업</a></li>
+            <li class="list__item"><a href="#">헤어·바디·구강</a></li>
+        </ul>
+        <ul>
+            <li class="list__item"><a href="#">주방용품</a></li>
+            <li class="list__item"><a href="#">가전제품</a></li>
+            <li class="list__item"><a href="#">베이비·키즈</a></li>
+            <li class="list__item"><a href="#">반려동물</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="list__img">
+            <img src="./img/md.jpg" alt="md">
+            <img src="./img/md2.jpg" alt="md">
+            <img src="./img/md3.jpg" alt="md">
+            <img src="./img/md4.jpg" alt="md">
+        </div>
+        <div class="list__desc">
+            <p>[프란토이 올리아리] 발사믹 드레싱 포션</p>
+            <p>[위더레전드] 유기농 엑스트라버진 오히블랑카500ml(2020-2021햇올리브)</p>
+            <p>[청정원] 스페셜12호 혼합세트</p>
+            <p>[올반] 생 메밀면 500g</p>
+        </div>
+        <div class="list__pay">
+            <p>6,400원</p>
+            <p>49,500원</p>
+            <p>9,900원</p>
+            <p>3,027원</p>
+        </div>
+    </div>
+</section>
+<section class="text__banner">
+    <h1>장바구니 자랑하면 5천원의 행운이 매일!</h1>
+    <p>매일 20분께 드리는 적립금 혜택</p>
+</section>
+<section class="epilogue">
+    <h1>인스타그램 고객 후기</h1>
+    <div class="instargram">
+        <img src="./img/instargram.jpg" alt="instargram">
+        <img src="./img/instargram2.jpg" alt="instargram">
+        <img src="./img/instargram3.jpg" alt="instargram">
+        <img src="./img/instargram4.jpg" alt="instargram">
+        <img src="./img/instargram5.jpg" alt="instargram">
+        <img src="./img/instargram6.jpg" alt="instargram">
+    </div>
+    <div class="instargram__desc">
+        <p>더 많은 고객 후기가 궁금하다면?</p>
+        <p>@marketkurly_regram</p>
+    </div>
+</section>
+<footer>
+    <div class="footer__banner">
+        <img src="./img/footer_banner.webp" alt="banner">
+    </div>
+    <div class="footer__customer">
+        <h4>고객행복센터</h4>
+        <div class="number">
+            <h1>1644-1107</h1>
+            <p>
+                <span>365고객센터</span>
+                <br>
+                <span>오전 7시 - 오후 7시</span>
+            </p>
+        </div>
+        <div class="kakaotalk">
+            <h5>카카오톡 문의</h5>
+            <p>
+                <span>365고객센터</span>
+                <br>
+                <span>오전 7시 - 오후 7시</span>
+            </p>
+        </div>
+        <div class="question">
+            <h5>1:1 문의</h5>
+            <p>
+                <span>24시간 접수 가능</span>
+                <br>
+                <span>고객센터 운영시간에 순차적으로 답변해드리겠습니다.</span>
+            </p>
+        </div>
+    </div>
+    <div class="footer__info">
+        <div class="footer__menu">
+            <ul>
+                <li class="menu__imem"><a href="#">컬리소개</a></li>
+                <li class="menu__imem"><a href="#">컬리소개영상</a></li>
+                <li class="menu__imem"><a href="#">인재채용</a></li>
+                <li class="menu__imem"><a href="#">이용약관</a></li>
+                <li class="menu__imem"><a href="#">개인정보처리방침</a></li>
+                <li class="menu__imem"><a href="#">이용안내</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <p>법인명 (상호): 주식회사 컬리 | 사업자등록번호 : 261-81-23567</p>
+            <p>통신판매업 : 제 2018-서울강남-01646호 | 개인정보보호책임자 : 이원준</p>
+            <p>주소 : 서울특별시 강남구 테헤란로 133,18층(역삼동) | 대표이사 : 김슬아</p>
+            <p>입점문의 : <a href="#">입점문의하기</a> | 제휴문의 : <a href="mailto:business@kurlycorp.com">business@kurlycorp.com</a></p>
+            <p>채용문의 : <a href="mailto:recruit@kurlycorp.com">recruit@kurlycorp.com</a></p>
+            <p>팩스 : 070-7500-6098 | 이메일 : <a href="mailto:help@kurlycorp.com">help@kurlycorp.com</a></p>
+            <br>
+            <p>© KURLY CORP. ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="sns">
+            <img src="./img/ico_instagram.webp" alt="instagram">
+            <img src="./img/ico_fb.webp" alt="facebook">
+            <img src="./img/ico_blog.webp" alt="blog">
+            <img src="./img/ico_naverpost.webp" alt="naverpost">
+            <img src="./img/ico_youtube.webp" alt="youtube">
+        </div>
+    </div>
+</footer>
 </body>
 </html>
