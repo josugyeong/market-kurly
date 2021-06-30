@@ -6,9 +6,11 @@
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<link rel="stylesheet" href="./js/script.js">
+<script src="./js/script.js"></script>
 <title>마켓컬리 :: 내일의 장보기, 마켓컬리</title>
 </head>
 <body>
@@ -29,37 +31,44 @@
                 <img src="./img/logo.webp" alt="">
             </div>
         </div>
-        <div class="bottom">
-            <ul class="menu">
-                <li class="menu__item dropdown"><a href="#">전체 카테고리</a>
-                    <div>
-                        <ul class="dropbtn">
-                            <li class="dropdown-content"><a href="#">채소</a></li>
-                            <li class="dropdown-content"><a href="#">과일·견과·쌀</a></li>
-                            <li class="dropdown-content"><a href="#">수산·해산·건어물</a></li>
-                            <li class="dropdown-content"><a href="#">정육·계란</a></li>
-                            <li class="dropdown-content"><a href="#">국·반찬·메인요리</a></li>
-                            <li class="dropdown-content"><a href="#">샐러드·간편식</a></li>
-                            <li class="dropdown-content"><a href="#">면·양념·오일</a></li>
-                            <li class="dropdown-content"><a href="#">생수·음료·우유·커피</a></li>
-                            <li class="dropdown-content"><a href="#">간식·과자·떡</a></li>
-                            <li class="dropdown-content"><a href="#">베이커리·치즈·델리</a></li>
-                            <li class="dropdown-content"><a href="#">건강식품</a></li>
-                            <li class="dropdown-content"><a href="#">생활용품·리빙</a></li>
-                            <li class="dropdown-content"><a href="#">스킨케어·메이크업</a></li>
-                            <li class="dropdown-content"><a href="#">헤어·바디·구강</a></li>
-                            <li class="dropdown-content"><a href="#">주방용품</a></li>
-                            <li class="dropdown-content"><a href="#">가전제품</a></li>
-                            <li class="dropdown-content"><a href="#">베이비·키즈</a></li>
-                            <li class="dropdown-content"><a href="#">반려동물</a></li>
-                            <li class="dropdown-content"><a href="#">컬리의 추천</a></li>
-                        </ul>
+        <nav>
+            <ul class="navbar">
+                <li class="navbar__item">
+                    <a href="#" class="navbar__menu">전체 카테고리</a>
+                    <div class="navbar__submenu">
+                        <a href="#">채소</a>
+                        <a href="#">과일·견과·쌀</a>
+                        <a href="#">수산·해산·건어물</a>
+                        <a href="#">정육·계란</a>
+                        <a href="#">국·반찬·메인요리</a>
+                        <a href="#">샐러드·간편식</a>
+                        <a href="#">면·양념·오일</a>
+                        <a href="#">생수·음료·우유·커피</a>
+                        <a href="#">간식·과자·떡</a>
+                        <a href="#">베이커리·치즈·델리</a>
+                        <a href="#">건강식품</a>
+                        <a href="#">생활용품·리빙</a>
+                        <a href="#">스킨케어·메이크업</a>
+                        <a href="#">헤어·바디·구강</a>
+                        <a href="#">주방용품</a>
+                        <a href="#">가전제품</a>
+                        <a href="#">베이비·키즈</a>
+                        <a href="#">반려동물</a>
+                        <a href="#">컬리의 추천</a>
                     </div>
                 </li>
-                <li class="menu__item"><a href="#">신상품</a></li>
-                <li class="menu__item"><a href="#">베스트</a></li>
-                <li class="menu__item"><a href="#">알뜰쇼핑</a></li>
-                <li class="menu__item"><a href="#">특가혜택</a></li>
+                <li class="menu__item">
+                    <a href="#" class="navbar__menu">신상품</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="navbar__menu">베스트</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="navbar__menu">알뜰쇼핑</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="navbar__menu">특가혜택</a>
+                </li>
             </ul>
             <div class="icon">
                 <input type="text">
@@ -67,29 +76,14 @@
                 <i class="uil uil-map-marker"></i>
                 <i class="uil uil-shopping-cart"></i>
             </div>
-        </div>
+        </nav>
     </div>
 </header>
 <section>
-<div class="custom__slider">
-    <div class="slider__content">
-        <div class="slider__img">
-            <img src="./img/banner1.webp" alt="banner">
+    <div class="custom__slider">
+        <div>
+            <img src="./img/banner1.webp" alt="">
         </div>
-    </div>
-
-    <!-- <div class="slider__content">
-        <div class="slider__img">
-            <img src="./img/banner2.webp" alt="banner">
-        </div>
-    </div> -->
-</div>
-    <div class="main">
-        <ul class="main__desc">
-            <li><a href="#welcome">Welcome Gift</a></li>
-            <li><a href="#delivery">첫 구매 무료배송</a></li>
-            <li><a href="#month">한 달 동안 5% 적립</a></li>
-        </ul>
     </div>
 </section>
 <section class="welcome" id="welcome">
@@ -123,7 +117,7 @@
 <section class="reserve">
     <div class="coupon">
         <img src="./img/benefit4_v2.webp" alt="혜택4">
-        <h1>5000원 적립</h1>
+        <h1>적립금 5000원!</h1>
     </div>
 </section>
 <section class="recommend">

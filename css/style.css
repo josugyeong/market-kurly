@@ -20,6 +20,7 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 
 h1 {
@@ -73,16 +74,44 @@ header {
     line-height: 50px;
     font-size: var(--sub-size);
 }
-.dropbtn {
-    display: none;
-}
-.menu {
+.navbar {
+    padding: 2rem 0 ;
+    /* margin-top: -2rem; */
     float: left;
     display: flex;
+    margin: 0 auto;
 }
-.menu__item {
-    padding: 3rem;
-    font-weight: bold;
+.navbar__menu {
+    font-size: var(--small-size);
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+.navbar__menu:first-child:hover {
+    color: var(--main-color);
+}
+.navbar__item {
+    width: 150px;
+}
+.navbar a {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 1rem;
+}
+.navbar__submenu {
+    font-size: var(--small-size);
+    width: 160px;
+    position: absolute;
+}
+.navbar__submenu a {
+    font-size: var(--small-size);
+    color: #727c7c;
+    background: #fff;
+}
+.navbar__submenu a:hover {
+    background: #f7f7f7;
+    color: var(--main-color);
 }
 .icon {
     padding: 2.5rem;
